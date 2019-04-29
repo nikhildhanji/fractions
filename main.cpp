@@ -9,6 +9,7 @@ extern void lines();
 extern void fraction_strips_display();
 int main()
 {
+        char any_key;
         fraction_strips_display();
         cout<<"\n\n";
         int i {}, j{};
@@ -82,6 +83,8 @@ int main()
         for (const auto ptr: frac_ptr){
             delete ptr;
         }
+        cout<<"Press any key to end: ";
+        cin>>any_key;
 	return 0;
 }
 void lines(){
